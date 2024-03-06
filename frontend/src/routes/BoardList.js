@@ -126,7 +126,7 @@ const BoardList = () => {
       </div>
       <br />
       <div>
-        <button onClick={moveToWrite}>글쓰기</button>
+        <button onClick={moveToWrite}>글쓰기kk</button>
       </div>
     </div>
   );
