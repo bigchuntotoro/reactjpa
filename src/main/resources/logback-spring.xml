@@ -23,7 +23,8 @@
             <pattern>${ROLLING_PATTERN}</pattern>
         </encoder>
         <file>${FILE_NAME}</file>
-        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+        <!--<rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">-->
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
 <!--            <fileNamePattern>${LOG_NAME_PATTERN}</fileNamePattern>
             <maxHistory>${MAX_HISTORY}</maxHistory>
             <maxFileSize>${MAX_FILE_SIZE}</maxFileSize>
