@@ -35,11 +35,11 @@
         <appender-ref ref="STDOUT"/>
         <appender-ref ref="ROLLING_LOG_FILE"/>
     </logger>
-    <logger name="jdbc.sqlonly" level="DEBUG" additive="false" >
+    <logger name="jdbc.sqlonly" level="INFO" additive="false" >
         <appender-ref ref="STDOUT"/>
         <appender-ref ref="ROLLING_LOG_FILE"/>
     </logger>
-    <logger name="jdbc.sqltiming" level="OFF" additive="false" >
+    <logger name="jdbc.sqltiming" level="INFO" additive="false" >
         <appender-ref ref="STDOUT"/>
         <appender-ref ref="ROLLING_LOG_FILE"/>
     </logger>
