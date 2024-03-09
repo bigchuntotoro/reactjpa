@@ -3,7 +3,7 @@
 
 <configuration>
 
-    <property name="FILE_NAME" value="./application.log" />
+    <property name="FILE_NAME" value="../../logs/application.log" />
     <property name="CONSOLE_PATTERN" value="%d{yyyy-MM-dd HH:mm:ss.SSS} %magenta([%thread]) %highlight([%-3level]) %logger{5} - %msg %n" />
     <property name="ROLLING_PATTERN" value="%d{yyyy-MM-dd HH:mm:ss.SSS}  %logger{5} - %msg %n" />
     <property name="LOG_NAME_PATTERN" value="/logs/application-%d{yyyy-MM-dd-HH-mm}.%i.log" />
