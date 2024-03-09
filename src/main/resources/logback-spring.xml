@@ -36,7 +36,6 @@
         <appender-ref ref="STDOUT"/>
         <appender-ref ref="ROLLING_LOG_FILE"/>
     </logger>
-
     <logger name="jdbc.sqlonly" level="OFF" additive="false" >
         <appender-ref ref="STDOUT"/>
         <appender-ref ref="ROLLING_LOG_FILE"/>
