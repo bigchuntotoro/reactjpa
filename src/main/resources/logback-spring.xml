@@ -23,6 +23,9 @@
         <pattern>${ROLLING_PATTERN}</pattern>
     </encoder>
     <file>${FILE_NAME}</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+
+        </rollingPolicy>
     </appender>
 
     <!-- jdbc sql 관련 log level 설정 -->
