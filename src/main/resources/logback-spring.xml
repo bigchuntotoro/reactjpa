@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE configuration>
 
-<!-- 60초 파일 변경 확인 및 재시작 -->
-<configuration scan="true" scanPeriod="60 seconds">
-    <!-- logback 종료 -->
-    <shutdownHook />
+<configuration>
+
+    <property name="FILE_NAME" value="/logs/application.log" />
+    <property name="CONSOLE_PATTERN" value="%d{yyyy-MM-dd HH:mm:ss.SSS} %magenta([%thread]) %highlight([%-3level]) %logger{5} - %msg %n" />
+    <property name="ROLLING_PATTERN" value="%d{yyyy-MM-dd HH:mm:ss.SSS}  %logger{5} - %msg %n" />
+    <property name="LOG_NAME_PATTERN" value="/logs/application-%d{yyyy-MM-dd-HH-mm}.%i.log" />
+    <property name="MAX_FILE_SIZE" value="10MB" />
+    <property name="TOTAL_SIZE" value="30MB" />
+    <property name="MAX_HISTORY" value="2" />
 
     <!-- STDOUT(콘솔 로그 출력) -->
     <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
