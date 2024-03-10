@@ -44,7 +44,6 @@
         <appender-ref ref="STDOUT"/>
         <appender-ref ref="ROLLING_LOG_FILE"/>
     </logger>
-
     <logger name="jdbc.audit" level="OFF" additive="false" >
         <appender-ref ref="STDOUT"/>
         <appender-ref ref="ROLLING_LOG_FILE"/>
