@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE configuration>
 
-<configuration>
+<configuration scan="true" scanPeriod="60 seconds">
 
     <property name="FILE_NAME" value="../../logs/reactboard.log" />
     <property name="CONSOLE_PATTERN" value="%d{yyyy-MM-dd HH:mm:ss.SSS} %magenta([%thread]) %highlight([%-3level]) %logger{5} - %msg %n" />
@@ -32,11 +32,11 @@
     </appender>
 
     <!-- jdbc sql 관련 log level 설정 -->
-    <logger name="jdbc" level="OFF" additive="false">
+    <logger name="jdbc" level="INFO" additive="false">
         <appender-ref ref="STDOUT"/>
         <appender-ref ref="ROLLING_LOG_FILE"/>
     </logger>
-    <logger name="jdbc.sqlonly" level="OFF" additive="false" >
+    <logger name="jdbc.sqlonly" level="INFO" additive="false" >
         <appender-ref ref="STDOUT"/>
         <appender-ref ref="ROLLING_LOG_FILE"/>
     </logger>
@@ -52,7 +52,7 @@
         <appender-ref ref="STDOUT"/>
         <appender-ref ref="ROLLING_LOG_FILE"/>
     </logger>
-    <logger name="jdbc.resultsettable" level="INFO" additive="false" >
+    <logger name="jdbc.resultsettable" level="OFF" additive="false" >
         <appender-ref ref="STDOUT"/>
         <appender-ref ref="ROLLING_LOG_FILE"/>
     </logger>
